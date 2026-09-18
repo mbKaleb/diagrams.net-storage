@@ -1,0 +1,106 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Page-1" id="dnfpYmGlEhsKRZVZsZUC">
+    <mxGraphModel adaptiveColors="auto" dx="1200" dy="800" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1600" pageHeight="1000" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="client" value="Clients" style="swimlane;startSize=24;fillColor=#e8f4f8;strokeColor=#6c8ebf;html=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="40" width="260" height="520" as="geometry" />
+        </mxCell>
+        <mxCell id="web" value="Web Application" style="rounded=1;whiteSpace=wrap;fillColor=#dae8fc;strokeColor=#6c8ebf;html=1;" vertex="1" parent="client">
+          <mxGeometry x="50" y="80" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="mobile" value="Mobile Application" style="rounded=1;whiteSpace=wrap;fillColor=#dae8fc;strokeColor=#6c8ebf;html=1;" vertex="1" parent="client">
+          <mxGeometry x="50" y="190" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="admin" value="Admin Portal" style="rounded=1;whiteSpace=wrap;fillColor=#dae8fc;strokeColor=#6c8ebf;html=1;" vertex="1" parent="client">
+          <mxGeometry x="50" y="300" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="platform" value="Application Platform" style="swimlane;startSize=24;fillColor=#fff9e6;strokeColor=#d6b656;html=1;" vertex="1" parent="1">
+          <mxGeometry x="400" y="40" width="520" height="520" as="geometry" />
+        </mxCell>
+        <mxCell id="gateway" value="API Gateway" style="rounded=1;whiteSpace=wrap;fillColor=#fff2cc;strokeColor=#d6b656;html=1;" vertex="1" parent="platform">
+          <mxGeometry x="190" y="60" width="140" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="auth" value="Identity &amp; Access" style="rounded=1;whiteSpace=wrap;fillColor=#fff2cc;strokeColor=#d6b656;html=1;" vertex="1" parent="platform">
+          <mxGeometry x="40" y="180" width="140" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="services" value="Core Services" style="rounded=1;whiteSpace=wrap;fillColor=#fff2cc;strokeColor=#d6b656;html=1;" vertex="1" parent="platform">
+          <mxGeometry x="190" y="180" width="140" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="notifications" value="Notification Service" style="rounded=1;whiteSpace=wrap;fillColor=#fff2cc;strokeColor=#d6b656;html=1;" vertex="1" parent="platform">
+          <mxGeometry x="340" y="180" width="140" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="queue" value="Message Queue" style="rounded=1;whiteSpace=wrap;fillColor=#fff2cc;strokeColor=#d6b656;html=1;" vertex="1" parent="platform">
+          <mxGeometry x="190" y="310" width="140" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="observability" value="Logging &amp; Monitoring" style="rounded=1;whiteSpace=wrap;fillColor=#fff2cc;strokeColor=#d6b656;html=1;" vertex="1" parent="platform">
+          <mxGeometry x="190" y="420" width="140" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="data" value="Data Layer" style="swimlane;startSize=24;fillColor=#e8f5e9;strokeColor=#82b366;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1020" y="40" width="300" height="520" as="geometry" />
+        </mxCell>
+        <mxCell id="database" value="Primary Database" style="shape=cylinder3;whiteSpace=wrap;fillColor=#d5e8d4;strokeColor=#82b366;html=1;" vertex="1" parent="data">
+          <mxGeometry x="90" y="80" width="100" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="cache" value="Cache" style="shape=cylinder3;whiteSpace=wrap;fillColor=#d5e8d4;strokeColor=#82b366;html=1;" vertex="1" parent="data">
+          <mxGeometry x="90" y="210" width="100" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="storage" value="Object Storage" style="shape=cylinder3;whiteSpace=wrap;fillColor=#d5e8d4;strokeColor=#82b366;html=1;" vertex="1" parent="data">
+          <mxGeometry x="90" y="340" width="100" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="external" value="External Systems" style="swimlane;startSize=24;fillColor=#fce4ec;strokeColor=#b85450;html=1;" vertex="1" parent="1">
+          <mxGeometry x="400" y="660" width="920" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="payments" value="Payment Provider" style="rounded=1;whiteSpace=wrap;fillColor=#f8cecc;strokeColor=#b85450;html=1;" vertex="1" parent="external">
+          <mxGeometry x="80" y="70" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="email" value="Email / SMS Provider" style="rounded=1;whiteSpace=wrap;fillColor=#f8cecc;strokeColor=#b85450;html=1;" vertex="1" parent="external">
+          <mxGeometry x="380" y="70" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="analytics" value="Analytics Platform" style="rounded=1;whiteSpace=wrap;fillColor=#f8cecc;strokeColor=#b85450;html=1;" vertex="1" parent="external">
+          <mxGeometry x="680" y="70" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="e1" value="HTTPS" style="edgeStyle=orthogonalEdgeStyle;rounded=1;endArrow=classic;html=1;" edge="1" parent="1" source="web" target="gateway">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e2" value="HTTPS" style="edgeStyle=orthogonalEdgeStyle;rounded=1;endArrow=classic;html=1;" edge="1" parent="1" source="mobile" target="gateway">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e3" value="HTTPS" style="edgeStyle=orthogonalEdgeStyle;rounded=1;endArrow=classic;html=1;" edge="1" parent="1" source="admin" target="gateway">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e4" style="edgeStyle=orthogonalEdgeStyle;rounded=1;endArrow=classic;html=1;" edge="1" parent="1" source="gateway" target="auth">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e5" style="edgeStyle=orthogonalEdgeStyle;rounded=1;endArrow=classic;html=1;" edge="1" parent="1" source="gateway" target="services">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e6" style="edgeStyle=orthogonalEdgeStyle;rounded=1;endArrow=classic;html=1;" edge="1" parent="1" source="services" target="database">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e7" style="edgeStyle=orthogonalEdgeStyle;rounded=1;endArrow=classic;html=1;" edge="1" parent="1" source="services" target="cache">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e8" style="edgeStyle=orthogonalEdgeStyle;rounded=1;endArrow=classic;html=1;" edge="1" parent="1" source="services" target="storage">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e9" style="edgeStyle=orthogonalEdgeStyle;rounded=1;endArrow=classic;html=1;" edge="1" parent="1" source="services" target="queue">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e10" style="edgeStyle=orthogonalEdgeStyle;rounded=1;endArrow=classic;html=1;" edge="1" parent="1" source="queue" target="notifications">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e11" style="edgeStyle=orthogonalEdgeStyle;rounded=1;endArrow=classic;html=1;" edge="1" parent="1" source="services" target="payments">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e12" style="edgeStyle=orthogonalEdgeStyle;rounded=1;endArrow=classic;html=1;" edge="1" parent="1" source="notifications" target="email">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e13" style="edgeStyle=orthogonalEdgeStyle;rounded=1;dashed=1;endArrow=classic;html=1;" edge="1" parent="1" source="observability" target="analytics">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
