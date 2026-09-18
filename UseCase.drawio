@@ -1,0 +1,119 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Page-1" id="Scr_2OLx3F3FBgFdARKF">
+    <mxGraphModel dx="1184" dy="660" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="boundary" parent="1" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;fontSize=16;fontStyle=1;fillColor=none;" value="EventHub" vertex="1">
+          <mxGeometry height="640" width="400" x="200" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="student" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;" value="Student" vertex="1">
+          <mxGeometry height="80" width="40" x="70" y="200" as="geometry" />
+        </mxCell>
+        <mxCell id="organizer" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;" value="Organizer" vertex="1">
+          <mxGeometry height="80" width="40" x="70" y="500" as="geometry" />
+        </mxCell>
+        <mxCell id="admin" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;" value="Admin" vertex="1">
+          <mxGeometry height="80" width="40" x="690" y="300" as="geometry" />
+        </mxCell>
+        <mxCell id="uc_login" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Log in" vertex="1">
+          <mxGeometry height="50" width="150" x="240" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="uc_view" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="View events" vertex="1">
+          <mxGeometry height="50" width="150" x="240" y="150" as="geometry" />
+        </mxCell>
+        <mxCell id="uc_register" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Register for event" vertex="1">
+          <mxGeometry height="50" width="150" x="230" y="230" as="geometry" />
+        </mxCell>
+        <mxCell id="uc_capacity" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Check capacity" vertex="1">
+          <mxGeometry height="50" width="150" x="440" y="170" as="geometry" />
+        </mxCell>
+        <mxCell id="uc_cancel" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Cancel registration" vertex="1">
+          <mxGeometry height="50" width="150" x="240" y="310" as="geometry" />
+        </mxCell>
+        <mxCell id="uc_notify_recv" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Receive notifications" vertex="1">
+          <mxGeometry height="50" width="150" x="230" y="390" as="geometry" />
+        </mxCell>
+        <mxCell id="uc_approve" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Approve / reject event" vertex="1">
+          <mxGeometry height="50" width="150" x="425" y="270" as="geometry" />
+        </mxCell>
+        <mxCell id="uc_create" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Create event" vertex="1">
+          <mxGeometry height="50" width="150" x="230" y="480" as="geometry" />
+        </mxCell>
+        <mxCell id="uc_edit" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Edit event" vertex="1">
+          <mxGeometry height="50" width="150" x="230" y="600" as="geometry" />
+        </mxCell>
+        <mxCell id="uc_send" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="Send notification to attendees" vertex="1">
+          <mxGeometry height="50" width="150" x="410" y="530" as="geometry" />
+        </mxCell>
+        <mxCell id="e1" edge="1" parent="1" source="student" style="endArrow=none;html=1;" target="uc_login">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="200" y="110" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e2" edge="1" parent="1" source="student" style="endArrow=none;html=1;" target="uc_view">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="200" y="180" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e3" edge="1" parent="1" source="student" style="endArrow=none;html=1;" target="uc_register">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e4" edge="1" parent="1" source="student" style="endArrow=none;html=1;" target="uc_cancel">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="210" y="335" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e5" edge="1" parent="1" source="student" style="endArrow=none;html=1;" target="uc_notify_recv">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="200" y="410" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e6" edge="1" parent="1" source="organizer" style="endArrow=none;html=1;" target="uc_login">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="200" y="110" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e7" edge="1" parent="1" source="organizer" style="endArrow=none;html=1;" target="uc_create">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e8" edge="1" parent="1" source="organizer" style="endArrow=none;html=1;" target="uc_edit">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e9" edge="1" parent="1" source="organizer" style="endArrow=none;html=1;" target="uc_send">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e10" edge="1" parent="1" source="admin" style="endArrow=none;html=1;" target="uc_login">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="600" y="105" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e11" edge="1" parent="1" source="admin" style="endArrow=none;html=1;" target="uc_approve">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="600" y="300" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="inc1" edge="1" parent="1" source="uc_register" style="endArrow=open;endFill=0;dashed=1;html=1;" target="uc_capacity" value="&amp;laquo;include&amp;raquo;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ext1" edge="1" parent="1" source="uc_send" style="endArrow=open;endFill=0;dashed=1;html=1;" target="uc_edit" value="&amp;laquo;extend&amp;raquo;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
